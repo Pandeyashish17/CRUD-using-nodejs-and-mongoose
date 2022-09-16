@@ -1,11 +1,12 @@
 import React from "react";
 import axios from "axios";
 const index = ({ data }) => {
-  const { title, body } = data.data[0];
+  const { title, body, image } = data.data;
   return (
     <div style={{ background: "white", color: "black" }}>
       <p>{title}</p>
       <p>{body}</p>
+      <img src={image} alt="" />
     </div>
   );
 };
